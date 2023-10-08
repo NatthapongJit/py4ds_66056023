@@ -28,7 +28,7 @@ def find_and_replace(text, old_str, new_str):
     Returns:
         str: The modified text with all occurrences of old_str replaced with new_str.
     """
-    # TODO : complete this
+    # FIX: complete this
     replaced_text = ""
     i = 0
 
