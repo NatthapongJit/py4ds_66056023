@@ -15,7 +15,7 @@ def print_ASCII_table(start_char, end_char):
         str: Returns nothing. The function simply prints the ASCII characters.
 
     """
-    # TODO : complete this
+    # FIX : complete this
 
     for i in range(start_char, end_char+1):
         print(chr(i))
