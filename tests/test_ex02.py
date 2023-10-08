@@ -21,4 +21,4 @@ def test_convert_two_times():
     assert convert_to_celsius(convert_to_fahrenheit(15)) == 15
     # ทำไม?? ทำไมต้อง round() ??
     # TODO: answer this
-    assert convert_to_celsius(convert_to_fahrenheit(42)) == round(42.00000000000001)
+    assert convert_to_celsius(convert_to_fahrenheit(42)) == 42.00000000000001
