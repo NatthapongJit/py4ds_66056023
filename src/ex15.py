@@ -1,9 +1,9 @@
 """
 Exercise 15
 """
+import statistics
 
-
-def median(params):
+def median(num_list):
     """
     Calculate the median of a list of numbers.
 
@@ -13,4 +13,4 @@ def median(params):
     Returns:
         [int, None]: The median value of the list, or None if the list is empty.
     """
-    pass
+    return None if not num_list else statistics.median(num_list)
