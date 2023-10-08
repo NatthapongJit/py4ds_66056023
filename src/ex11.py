@@ -22,27 +22,27 @@ def get_hr_min_sec(tsec):
         >>> get_hr_min_sec(0)
         '0s'
     """
-    if tsec == 0:
+    tt = tsec
+    if tt == 0:
         return '0s'
-    totalSeconds = tsec
-    if totalSeconds >= 3600:
-        hours = totalSeconds // 3600
-        totalSeconds = totalSeconds % 3600
+    if tt >= 3600:
+        h = tt // 3600
+        tt = tt % 3600
     else:
-        hours = 0
-    if totalSeconds >= 60:
-        minutes = totalSeconds // 60
-        totalSeconds = totalSeconds % 60
+        h = 0
+    if tt >= 60:
+        min = tt // 60
+        tt = tt % 60
     else:
-        minutes = 0
-    seconds = totalSeconds
+        min = 0
+    sec = tt
     hms = []
-    if hours > 0:
-        hms.append(str(hours) + 'h')
+    if h > 0:
+        hms.append(str(h) + 'h')
 
-    if minutes > 0:
-        hms.append(str(minutes) + 'm')
+    if min > 0:
+        hms.append(str(min) + 'm')
 
-    if seconds > 0:
-        hms.append(str(seconds) + 's')
+    if sec > 0:
+        hms.append(str(sec) + 's')
     return ' '.join(hms)
