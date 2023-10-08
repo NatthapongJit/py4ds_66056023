@@ -1,9 +1,9 @@
 """
 Exercise 16
 """
+import statistics
 
-
-def mode(params):
+def mode(num_list):
     """
     Calculate the mode of a list of numbers.
 
@@ -13,4 +13,4 @@ def mode(params):
     Returns:
     - int or None: The mode of the list, or None if the list is empty.
     """
-    pass
+    return None if not num_list else statistics.mode(num_list)
