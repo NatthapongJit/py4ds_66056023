@@ -1,9 +1,8 @@
 """
-Execise 12
+Exercise 12
 """
 
-
-def get_smallest(param):
+def get_smallest(num_list):
     """
     Get the smallest number from a list of numbers.
 
@@ -13,4 +12,8 @@ def get_smallest(param):
     Returns:
         int or None: The smallest number from the list. If the list is empty, returns None.
     """
-    pass
+    try:
+        return min(num_list)
+    except ValueError:
+        return None
+
