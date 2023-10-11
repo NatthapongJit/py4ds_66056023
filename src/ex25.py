@@ -28,7 +28,7 @@ def multiplication_table(start, end = 11):
     """
     print('  | 1  2  3  4  5  6  7  8  9 10')
     print('--+------------------------------')
-    # TODO : complete this
+    # FIX : complete this
     # Loop over all numbers from 1 to 10:
     for column in range(start, end):
         print(str(column).rjust(2) + '|', end=" ")
